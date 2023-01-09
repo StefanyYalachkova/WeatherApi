@@ -1,0 +1,29 @@
+body {
+  padding: 150px;
+  background-color: #f1d2e0e1;
+}
+
+#cities-field {
+  text-align: center;
+}
+
+button[type=submit] {
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 255);
+  padding: 10px;
+  border-radius: 8px;
+  height: 100%;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  left: 5%;
+}
+
+p {
+  font-weight: bold;
+}
+
+.container {
+  text-align: center;
+  padding: 100px;
+}
