@@ -7,6 +7,7 @@ import {
   getWeatherIcon,
 } from "./axiosFunctions";
 import { useTranslation } from "react-i18next";
+import i18n from "./i18n";
 
 function Weather() {
   const [list, setList] = useState([]);
@@ -24,6 +25,7 @@ function Weather() {
   const [retrievedIconName, setRetrievedIconName] = useState("");
 
   const [t] = useTranslation();
+  console.log(i18n.language);
 
   const filterOptions = createFilterOptions({
     limit: 15,
@@ -109,25 +111,29 @@ function Weather() {
       />
       <h1>{cityWeatherInfo.name}</h1>
       {cityWeatherInfo.temp_c && (
-        <h4>Temperature in celsius: {cityWeatherInfo.temp_c} ℃</h4>
+        <h4>
+          {t("temperature")} {cityWeatherInfo.temp_c} ℃
+        </h4>
       )}
       {cityWeatherInfo.feelslike_c && (
         <h4>
-          Feels like temperature in celsius: {cityWeatherInfo.feelslike_c} ℃
+          {t("feelsLike")} {cityWeatherInfo.feelslike_c} ℃
         </h4>
       )}
       {cityWeatherInfo.text && (
-        <h4>Weather condition text: {cityWeatherInfo.text}</h4>
+        <h4>
+          {t("weatherCondition")} {cityWeatherInfo.text}
+        </h4>
       )}
       {retrievedIconName && cityWeatherInfo.icon && (
         <h4>
-          Weather icon url:{" "}
+          {t("weatherIcon")}{" "}
           {<img src={require(`./icon/${retrievedIconName}.png`)} alt={"ss"} />}
         </h4>
       )}
       {cityWeatherInfo.wind_kph && (
         <h4>
-          Wind speed in kilometer per hour: {cityWeatherInfo.wind_kph} km/h
+          {t("windSpeed")} {cityWeatherInfo.wind_kph} km/h
         </h4>
       )}
     </div>

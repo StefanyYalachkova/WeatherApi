@@ -1,7 +1,7 @@
 {
   "temperature": "Temperature in celsius: ",
   "feelsLike": "Feels like temperature in celsius: ",
-  "WeatherCondition": "Weather condition text: ",
+  "weatherCondition": "Weather condition text: ",
   "weatherIcon": "Weather icon url:",
   "windSpeed": "Wind speed in kilometer per hour: "
 }
