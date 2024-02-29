@@ -1,16 +1,15 @@
 phrase:
-  access_token: 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
   project_id: dfb94e56588822f0b46438ed822d1b4a
 
   push:
     sources:
-      - file: ./src/<locale_name>.json
+      - file: ./src/en.json
         params:
           file_format: simple_json
           locale_id: en
 
-    pull:
-    targets:
-      - file: ./src/<locale_name>.json
-        params:
-          file_format: simple_json
+  pull:
+  targets:
+    - file: ./src/en.json
+      params:
+        file_format: simple_json
