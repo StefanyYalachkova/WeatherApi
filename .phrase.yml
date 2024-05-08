@@ -10,6 +10,6 @@ phrase:
 
     pull:
       targets:
-        - file: ./<locale_name>.json
+        - file: ./de.json
           params:
             file_format: simple_json
