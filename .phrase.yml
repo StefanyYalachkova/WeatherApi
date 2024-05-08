@@ -1,12 +1,12 @@
 phrase:
-  project_id: 381340041828742e30ddc3f4a8ef9ec5
+  project_id: 75a88f61383e69ddb18c106dd1222dfc
 
   push:
     sources:
       - file: ./src/<locale_name>.json
         params:
           file_format: simple_json
-          locale_id: en-US
+          locale_id: en
 
     pull:
     targets:
