@@ -3,7 +3,7 @@ phrase:
 
   push:
     sources:
-      - file: ./<locale_name>.json
+      - file: ./en.json
         params:
           file_format: simple_json
           locale_id: en
